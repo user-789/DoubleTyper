@@ -26,6 +26,10 @@ public class Listener implements KeyListener {
 			}
 		} else if (c != KeyEvent.CHAR_UNDEFINED) {
 			field.setText(text + c);
+		} else if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+			field.setCaretPosition(Math.max(field.getCaretPosition()-1, 0));
+		} else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+			field.setCaretPosition(Math.min(field.getCaretPosition()+1, field.getText().length()));
 		}
 	}
 
