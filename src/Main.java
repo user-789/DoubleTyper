@@ -36,7 +36,7 @@ public class Main {
 		
 		Arrays.setAll(panels, i -> new JPanel());
 		
-		frame = new JFrame("LOGIN");
+		frame = new JFrame("REGISTER");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(300, 450);
 		frame.setLocationRelativeTo(null);
