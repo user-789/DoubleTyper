@@ -47,6 +47,7 @@ public class Main {
 			panel.setLayout(new GridLayout(2, 1));
 			JLabel txt = new JLabel(info[i]);
 			fields[i].addKeyListener(new Listener(fields[i]));
+			fields[i].setTransferHandler(null);
 			panel.add(txt);
 			panel.add(fields[i]);
 			frame.add(panel);
